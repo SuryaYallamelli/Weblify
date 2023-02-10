@@ -1,0 +1,281 @@
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Work+Sans:wght@100;200;300;400;500;600&display=swap');
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+     :root {
+        --h1: 40px;
+        --h2: 32px;
+        --h3: 28px;
+        --h4: 24px;
+        --h5: 20px;
+        --h6: 16px;
+        --sub: 20px;
+        --label: 16px;
+        --ls: 5px;
+        --body: 14px;
+        --font-1: 'Crimson Text', serif;
+        --font-2: 'Work Sans', sans-serif;
+        --color-dark-100: rgba(41, 33, 33, 1);
+        --color-dark-75: rgba(41, 33, 33, 0.75);
+        --color-dark-50: rgba(41, 33, 33, 0.50);
+        --color-dark-25: rgba(41, 33, 33, 0.25);
+        --color-white-100: rgba(255, 255, 255, 1);
+        --color-white-75: rgba(255, 255, 255, 0.75);
+        --color-white-50: rgba(255, 255, 255, 0.50);
+        --color-white-25: rgba(255, 255, 255, 0.25);
+        --color-green-100: rgba(116, 198, 157, 1);
+        --color-green-75: rgba(116, 198, 157, 0.75);
+        --color-green-50: rgba(116, 198, 157, 0.50);
+        --color-green-25: rgba(116, 198, 157, 0.25);
+        --shadow-1: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+    }
+    /**
+* ! Code for removing default styles
+**/
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /**
+* ! Code for button
+**/
+    
+    .--dark-button,
+    .--white-button {
+        cursor: pointer;
+        font-size: var(--h5);
+        border: none;
+        font-family: var(--font-2);
+        background-color: var(--color-dark-100);
+        color: var(--color-white-100);
+        border-radius: 10px;
+        padding: 10px 40px;
+    }
+    
+    .--white-button {
+        background-color: var(--color-white-100);
+        color: var(--color-dark-100);
+    }
+    /**
+* ! Code for text colors
+**/
+    
+    .text-white {
+        color: var(--color-white-100);
+    }
+    
+    .text-dark {
+        color: var(--color-dark-100);
+    }
+    
+    .text-green {
+        color: var(--color-green-100);
+    }
+    /**
+* ! Code for labels
+**/
+    
+    .label {
+        font-family: var(--font-2);
+        font-size: var(--label);
+        letter-spacing: var(--ls);
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    /**
+* ! Code for hero
+**/
+    
+    .hero {
+        background-color: var(--color-green-100);
+    }
+    /**
+* ! Code for navbar
+**/
+    
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+    }
+    /**
+* ! Code for navbar
+**/
+    
+    .navbar__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    /**
+* ! Code for navbar logo
+**/
+    
+    .navbar__logo--text {
+        font-size: var(--h2);
+        font-family: var(--font-2);
+        font-weight: bold;
+        color: var(--color-white-100);
+    }
+    /**
+* ! Code for navbar menu
+**/
+    
+    .navbar__menu {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        font-family: var(--font-2);
+        font-size: var(--h5);
+    }
+    
+    [class^="navbar__menu--"] {
+        color: var(--color-white-100);
+        text-decoration: none;
+    }
+    
+    .navbar__icons {
+        display: none;
+    }
+    
+    .navbar__icons i {
+        cursor: pointer;
+        color: var(--color-white-100);
+        font-size: var(--h2);
+    }
+    /**
+* ! Code for common classes
+**/
+    
+    .text-center {
+        text-align: center;
+    }
+    
+    .container {
+        max-width: 1140px;
+        margin: auto;
+    }
+    
+    .responsive_image {
+        width: 100%;
+        height: auto;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding: 40px 0px;
+        gap: 25px;
+    }
+    
+    .flex {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .common-title {
+        text-transform: capitalize;
+        font-size: var(--h1);
+        font-family: var(--font-1);
+        font-weight: bold;
+    }
+    /**
+    * ! Code for footersection
+   **/
+    
+    .footerWrapper {
+        background-color: var(--color-green-100);
+    }
+    
+    .footerLinks {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0;
+        margin-top: 15px;
+    }
+    
+    .footerLinks__socials {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .footerLinks__copyright {
+        font-size: var(--sub);
+        font-family: var(--font-2);
+    }
+    /**
+* ! Code for media queries
+**/
+    
+    @media (max-width: 1200px) {
+        .container {
+            max-width: 970px;
+        }
+    }
+    
+    @media (max-width: 1024px) {
+        .container {
+            max-width: 740px;
+        }
+        .common-title {
+            font-size: var(--h4);
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .grid {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 50px;
+        }
+        .container {
+            max-width: 500px;
+        }
+        .white-btn,
+        .dark-btn {
+            font-size: var(--h6);
+            padding: 8px 25px;
+        }
+        .navbar__menu {
+            z-index: 1;
+            background-color: var(--color-green-100);
+            position: absolute;
+            opacity: 100%;
+            top: 100px;
+            right: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+        .navbar__menu--1 {
+            margin-top: -200px;
+        }
+        .navbar__icons {
+            display: block;
+        }
+        .hide {
+            display: none;
+        }
+        .hidden {
+            opacity: 0%;
+            z-index: -1;
+        }
+        .footerLinks {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+    
+    @media (max-width: 568px) {
+        .container {
+            max-width: 90%;
+        }
+    }
